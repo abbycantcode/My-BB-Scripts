@@ -13,4 +13,4 @@ This repository contains that I use personally in by bug-bounty workflow
 - Resulting files will be:
   - `alive_domains.txt` -> Contains domain names that did resolve to an IP
   - `resolved_domains.txt` -> Resolved domains from the original list and their IP as a comma separated value
-  - 'ip_addr.txt` -> Unique IP address that the domains resolved to
+  - `ip_addr.txt` -> Unique IP address that the domains resolved to
