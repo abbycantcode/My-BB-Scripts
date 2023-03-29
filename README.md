@@ -1,5 +1,5 @@
 # My-BB-Scripts
-This repository contains that I use personally in by bug-bounty workflow
+This repository contains one off scripts that I use personally in by bug-bounty workflow. These are simply some tasks that I have regularly come up while hunting bugs and doing stuff in terminal.
 
 ## sort_subdomains.py:
 - This script sorts huge list of subdomains(multiple root-domains) from a file to new files belonging to a particular root-domain with their name on it.
