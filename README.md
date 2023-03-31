@@ -28,3 +28,8 @@ user2:pass1
 user2:pass2
 ... so on
 ```
+
+## wordlist_cleaner.py
+- This script cleans a huge ass wordlist from noisy and unncessary things such as not useful file extensions which can be later used to create a new target specific wordlist or even permutations of it so we can do content discovery with it afterwards.
+- Usage: `python3 wordlist_cleaner.py wordlist.txt`
+- The output will be saved in a new file: `wordlist.txt_cleaned`
