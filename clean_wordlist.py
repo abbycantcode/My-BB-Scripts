@@ -28,6 +28,10 @@ regexes = [
     r"&[a-zA-Z]+;", # Ignore XML Encoded characters
     r"^$",  # Ignores blank lines
     r"^[^A-Za-z0-9\s]", # Ignore Lines starting with special characters
+    r"[A-Z]{5,}", # 5 or more consecutive capital characters which are usually junk or of no use
+    r"\b(\d+|xx)\.html\b", # Some more spam endpoints filtered
+    r"^\w+(?:[-+]\w+){2,}$", # Location spams
+    r"\b[a-zA-Z0-9-]*\d[a-zA-Z0-9-]*\.[a-zA-Z]+\b" # Spammy subdomains
 ]
 
 # Set up the command line argument parser
