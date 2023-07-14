@@ -34,3 +34,9 @@ user2:pass2
 - Usage: `python3 wordlist_cleaner.py wordlist.txt`
 - The output will be saved in a new file: `wordlist.txt_cleaned`
 - This is a modified version of what @BonJarber made a few years back. You can check the original one here: [clean_wordlist.sh](https://github.com/BonJarber/SecUtils/blob/master/clean_wordlist/clean_wordlist.sh)
+
+
+## download_js.py
+- A simple script to bulk download javascript files after curating a list of javacript urls from the target, it uses multi-threading to download the files you can also change the number of threads inside the script I have kept it default to 10.
+- Usage: `python3 download_js.py js-urls.txt`
+- It will download the javascript files inside a folder called `downloaded-js`
