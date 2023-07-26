@@ -1,4 +1,3 @@
-Copy code
 <?php
 // Get the URL parameter from the query string
 $url = $_GET['url'];
