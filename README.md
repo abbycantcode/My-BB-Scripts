@@ -40,3 +40,18 @@ user2:pass2
 - A simple script to bulk download javascript files after curating a list of javacript urls from the target, it uses multi-threading to download the files you can also change the number of threads inside the script I have kept it default to 10.
 - Usage: `python3 download_js.py js-urls.txt`
 - It will download the javascript files inside a folder called `downloaded-js`
+
+
+## webserver.py
+- This Python script is a custom web server that can be used for various purposes, including testing and redirection.
+  - It allows you to set up a simple web server quickly and easily with the ability to serve files and handle GET & POST requests.
+  - Optional redirection feature for specific paths.
+  - Verbose mode for detailed logging.
+ 
+  ### USAGE:
+    - `--hostname`: Specifies the hostname for the server (required).
+    - `--redirect`: Allows you to specify a redirection target URL.
+    - `--redirect_code`: Sets the HTTP response code for redirection (default is 303).
+    - `--redirect_token`: Manually sets the redirect token for redirection.
+    - `--verbose`: Enables verbose mode for detailed logging.
+    - `-l` or `--log_to_file`: Saves logs to a file named 'server.log'.
