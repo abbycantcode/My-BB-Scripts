@@ -55,3 +55,24 @@ user2:pass2
     - `--redirect_token`: Manually sets the redirect token for redirection.
     - `--verbose`: Enables verbose mode for detailed logging.
     - `-l` or `--log_to_file`: Saves logs to a file named 'server.log'.
+ 
+
+## full_nmap_script.py
+- This Python script automates the process of running `nmap` scans based on IP and port data from an input file. It provides a streamlined workflow that includes parsing the input file, running `nmap` scans in parallel, saving the results in XML format, and finally combining all the individual XML files into a single file for easier analysis.
+
+### FEATURES:
+  - **Input Parsing**: Reads IP:Port data from a specified input file.
+  - **Parallel Execution**: Utilizes multi-threading to perform `nmap` scans concurrently, speeding up the overall process.
+  - **Organized Output**: Saves the `nmap` scan results in a timestamped directory within the specified output directory.
+  - **Combining Results**: Merges all the individual `nmap` XML output files into a single `nmap_out.xml` file for comprehensive analysis.
+  - **Detailed Logging**: Generates a log file (`nmap_scan.log`) that tracks the execution process, making it easier to debug and monitor the script's performance.
+
+### USAGE:
+  - `-i` or `--input`: Specifies the input file containing IP:Port data (default: `naabu_results.txt`).
+  - `-o` or `--output`: Specifies the output directory where `nmap` results will be saved (default: `nmap-out`).
+  - `-t` or `--threads`: Specifies the number of threads for parallel `nmap` execution (default: 4).
+  
+  #### Example Command:
+  ```bash
+  python3 full_nmap_script.py -i naabu_results.txt -o nmap-out -t 4
+
