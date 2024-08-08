@@ -57,7 +57,7 @@ user2:pass2
     - `-l` or `--log_to_file`: Saves logs to a file named 'server.log'.
  
 
-## full_nmap_script.py
+## naabu_to_nmap.py
 - This Python script automates the process of running `nmap` scans based on IP and port data from an input file. It provides a streamlined workflow that includes parsing the input file, running `nmap` scans in parallel, saving the results in XML format, and finally combining all the individual XML files into a single file for easier analysis.
 
 ### FEATURES:
